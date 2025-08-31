@@ -33,8 +33,8 @@ fun main() {
             val apiResponse: ApiResponse? = responseResponse.body()
             if (apiResponse != null) {
                 apiResponseList.add(apiResponse)
-
-                Thread.sleep(200);
+            }else{
+                println("WORN: Api response null for %s".format(city))
             }
 
             Thread.sleep(200)
